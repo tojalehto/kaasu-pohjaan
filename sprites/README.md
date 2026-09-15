@@ -15,7 +15,7 @@ kohdistettuina, jotta pyörä ei hypi kallistuksen vaihtuessa.
 
 Erillinen taustakuva (esim. tarkempi siluetti) muunnetaan komennolla
 `.venv/bin/python tools/cut-sprites.py --bg skyline kuva.png`.
-Savuarkki (rivit: kiemura, pilvi, rengas; kiemuraa ei käytetä, tupakansavu on koodissa) leikataan komennolla
+Savuarkki (rivit: kiemura, pilvi, rengas) leikataan komennolla
 `.venv/bin/python tools/cut-sprites.py --smoke arkki.png`.
 Törmäysanimaation arkki leikataan komennolla `.venv/bin/python tools/cut-sprites.py --crash arkki.png`.
 
@@ -40,6 +40,7 @@ tien puolikas = 2000) mukaan, korkeus seuraa kuvan kuvasuhdetta. Arvot ovat
 | billboard-0.png, billboard-1.png | mainostaulut | noin 60x50 |
 | crash-bike-0..4.png | kaatuneen pyörän liuku, 5 ruutua yhteisellä kankaalla | 170x95 |
 | crash-mika-0..2.png, crash-david-0..2.png | lentävät kuskit, 3 ruutua kumpikin | 140x126, 103x104 |
+| smoke-wisp-0..11.png | tupakansavun patsas, 12 ruutua, looppaa kuljettajan pään takana | 31x68 |
 | smoke-ring-0..10.png | savurengas, 11 ruutua | 37x33 |
 | smoke-puff-0..11.png | pölypilvi kaatuneen pyörän liukuun, 12 ruutua | 75x37 |
 | logo.png | aloitusruudun logo, piirretään sellaisenaan 1:1 | 467x134 |
