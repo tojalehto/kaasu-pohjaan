@@ -13,6 +13,8 @@ kallistukset ovat oikein päin, vaihda SPRITES-taulukon kaksi ensimmäistä nime
 Skootterin kolme kuvaa ovat samalla 105x107-kankaalla takarenkaan mukaan
 kohdistettuina, jotta pyörä ei hypi kallistuksen vaihtuessa.
 
+Törmäysanimaation arkki leikataan komennolla `.venv/bin/python tools/cut-sprites.py --crash arkki.png`.
+
 Yksittäisen spriten voi myös vain korvata: pudota PNG tähän oikealla nimellä.
 Jos tiedosto puuttuu, peli piirtää koodilla tehdyn placeholderin.
 Läpinäkyvä tausta, takaa päin kuvattuna.
@@ -32,6 +34,8 @@ tien puolikas = 2000) mukaan, korkeus seuraa kuvan kuvasuhdetta. Arvot ovat
 | bush.png | pensas | 60x32 |
 | gantry.png | opastegantry tien yli | 178x83 |
 | billboard-0.png, billboard-1.png | mainostaulut | noin 60x50 |
+| crash-bike-0..4.png | kaatuneen pyörän liuku, 5 ruutua yhteisellä kankaalla | 113x63 |
+| crash-mika-0..2.png, crash-david-0..2.png | lentävät kuskit, 3 ruutua kumpikin | 94x84, 69x69 |
 | logo.png | aloitusruudun logo, piirretään sellaisenaan 1:1 | 280x80 |
 | sky.png | taivas, alareuna horisontissa, toistuu vaakasuunnassa (peilattu 768 leveä) | 768x120 |
 | skyline.png | kaupungin siluetti, alareuna horisontissa, taivas läpinäkyvä | 768x74 |
