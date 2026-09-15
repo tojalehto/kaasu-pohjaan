@@ -15,7 +15,7 @@ kohdistettuina, jotta pyörä ei hypi kallistuksen vaihtuessa.
 
 Erillinen taustakuva (esim. tarkempi siluetti) muunnetaan komennolla
 `.venv/bin/python tools/cut-sprites.py --bg skyline kuva.png`.
-Savuarkki (rivit: kiemura, pilvi, rengas) leikataan komennolla
+Savuarkki (rivit: kiemura, pilvi, rengas; kiemuraa ei käytetä, tupakansavu on koodissa) leikataan komennolla
 `.venv/bin/python tools/cut-sprites.py --smoke arkki.png`.
 Törmäysanimaation arkki leikataan komennolla `.venv/bin/python tools/cut-sprites.py --crash arkki.png`.
 
@@ -40,14 +40,13 @@ tien puolikas = 2000) mukaan, korkeus seuraa kuvan kuvasuhdetta. Arvot ovat
 | billboard-0.png, billboard-1.png | mainostaulut | noin 60x50 |
 | crash-bike-0..4.png | kaatuneen pyörän liuku, 5 ruutua yhteisellä kankaalla | 170x95 |
 | crash-mika-0..2.png, crash-david-0..2.png | lentävät kuskit, 3 ruutua kumpikin | 140x126, 103x104 |
-| smoke-wisp-0..11.png | tupakansavun kiemura, 12 ruutua | 31x68 |
 | smoke-ring-0..10.png | savurengas, 11 ruutua | 37x33 |
 | smoke-puff-0..11.png | pölypilvi kaatuneen pyörän liukuun, 12 ruutua | 75x37 |
 | logo.png | aloitusruudun logo, piirretään sellaisenaan 1:1 | 467x134 |
 | sky.png | taivas, alareuna horisontissa, toistuu vaakasuunnassa (peilattu 1280 leveä) | 1280x200 |
 | skyline.png | kaupungin siluetti, alareuna horisontissa, taivas läpinäkyvä | 1280x125 |
-| skyline-sunset.png, skyline-dawn.png | siluetit pilvineen 1. ja 3. kierrokselle, taivaan yläosa piirretään koodissa | 1280x129, 1280x133 |
-| near.png | lähimaisema horisontin edessä, yläosa läpinäkyvä | 1280x99 |
+| skyline-sunset.png, skyline-dawn.png | kaukaiset siluetit pilvineen 1. ja 3. kierrokselle; aurinko poistettu `tools/remove-sun.py`:llä, koska lähimaisemassa on oma aurinko | 1280x129, 1280x133 |
+| near.png, near-sunset.png, near-dawn.png | lähimaisema (vuoret, rantakaupunki, valot) per vuorokaudenaika, piirretään siluetin eteen | 1280x83, 1280x85, 1280x90 |
 
 Osoitteessa `http://localhost:5173/#sprites` näet kaikki placeholderit ja voit
 ladata ne PNG-pohjiksi.
