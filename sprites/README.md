@@ -10,9 +10,11 @@ Huom: arkin nimilaput player-left ja player-right ovat pelin kannalta
 päinvastoin, joten skripti tallentaa ne ristiin. Jos uudessa arkissa
 kallistukset ovat oikein päin, vaihda SPRITES-taulukon kaksi ensimmäistä nimeä.
 
-Skootterin kolme kuvaa ovat samalla 105x107-kankaalla takarenkaan mukaan
+Skootterin kolme kuvaa ovat samalla 157x160-kankaalla takarenkaan mukaan
 kohdistettuina, jotta pyörä ei hypi kallistuksen vaihtuessa.
 
+Erillinen taustakuva (esim. tarkempi siluetti) muunnetaan komennolla
+`.venv/bin/python tools/cut-sprites.py --bg skyline kuva.png`.
 Törmäysanimaation arkki leikataan komennolla `.venv/bin/python tools/cut-sprites.py --crash arkki.png`.
 
 Yksittäisen spriten voi myös vain korvata: pudota PNG tähän oikealla nimellä.
@@ -25,21 +27,21 @@ tien puolikas = 2000) mukaan, korkeus seuraa kuvan kuvasuhdetta. Arvot ovat
 
 | Tiedosto | Mitä | Nykyinen koko |
 |---|---|---|
-| player-straight.png | Mika ja David skootterilla, suoraan | 105x107 |
-| player-left.png | sama, kallistus vasemmalle | 105x107 |
-| player-right.png | sama, kallistus oikealle | 105x107 |
-| car-0.png ... car-5.png | liikenneautot takaa | noin 60x40 |
+| player-straight.png | Mika ja David skootterilla, suoraan | 157x160 |
+| player-left.png | sama, kallistus vasemmalle | 157x160 |
+| player-right.png | sama, kallistus oikealle | 157x160 |
+| car-0.png ... car-5.png | liikenneautot takaa | noin 95x60 |
 | palm.png | palmu | 59x109 |
 | lamp.png | lyhtypylväs | 35x102 |
 | bush.png | pensas | 60x32 |
 | gantry.png | opastegantry tien yli | 178x83 |
 | billboard-0.png, billboard-1.png | mainostaulut | noin 60x50 |
-| crash-bike-0..4.png | kaatuneen pyörän liuku, 5 ruutua yhteisellä kankaalla | 113x63 |
-| crash-mika-0..2.png, crash-david-0..2.png | lentävät kuskit, 3 ruutua kumpikin | 94x84, 69x69 |
-| logo.png | aloitusruudun logo, piirretään sellaisenaan 1:1 | 280x80 |
-| sky.png | taivas, alareuna horisontissa, toistuu vaakasuunnassa (peilattu 768 leveä) | 768x120 |
-| skyline.png | kaupungin siluetti, alareuna horisontissa, taivas läpinäkyvä | 768x74 |
-| near.png | lähimaisema horisontin edessä, yläosa läpinäkyvä | 768x59 |
+| crash-bike-0..4.png | kaatuneen pyörän liuku, 5 ruutua yhteisellä kankaalla | 170x95 |
+| crash-mika-0..2.png, crash-david-0..2.png | lentävät kuskit, 3 ruutua kumpikin | 140x126, 103x104 |
+| logo.png | aloitusruudun logo, piirretään sellaisenaan 1:1 | 467x134 |
+| sky.png | taivas, alareuna horisontissa, toistuu vaakasuunnassa (peilattu 768 leveä) | 1280x200 |
+| skyline.png | kaupungin siluetti, alareuna horisontissa, taivas läpinäkyvä | 1280x125 |
+| near.png | lähimaisema horisontin edessä, yläosa läpinäkyvä | 1280x99 |
 
 Osoitteessa `http://localhost:5173/#sprites` näet kaikki placeholderit ja voit
 ladata ne PNG-pohjiksi.
